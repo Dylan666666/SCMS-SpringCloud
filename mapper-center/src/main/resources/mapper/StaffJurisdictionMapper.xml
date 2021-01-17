@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oym.mappercenter.mapper.StaffJurisdictionMapper">
+    <select id="queryById" resultType="com.oym.mappercenter.entity.staff.StaffJurisdiction">
+        SELECT 
+        *
+        FROM 
+        tb_staff_jurisdiction
+        WHERE 
+        staff_id = #{staffId}
+    </select>
+
+    <select id="queryAll" resultType="com.oym.mappercenter.entity.staff.StaffJurisdiction">
+        SELECT 
+        *
+        FROM 
+        tb_staff_jurisdiction
+    </select>
+
+    <insert id="insert" parameterType="com.oym.mappercenter.entity.staff.StaffJurisdiction">
+        INSERT INTO
+        tb_staff_jurisdiction(staff_id,function_id,jurisdiction_status)
+        VALUES 
+        (#{staffId},#{functionId},#{jurisdictionStatus})
+    </insert>
+
+    <update id="update" parameterType="com.oym.mappercenter.entity.staff.StaffJurisdiction">
+        UPDATE
+        tb_staff_jurisdiction
+        SET 
+        jurisdiction_status = #{jurisdictionStatus}
+        WHERE
+        staff_id = #{staffId}
+        AND 
+        function_id = #{functionId}
+    </update>
+
+    <delete id="delete" parameterType="com.oym.mappercenter.entity.staff.StaffJurisdiction">
+        DELETE FROM
+        tb_staff_jurisdiction
+        WHERE 
+        staff_id = #{staffId}
+    </delete>
+
+</mapper>

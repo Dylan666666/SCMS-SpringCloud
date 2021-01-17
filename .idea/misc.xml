@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/01-springcloud-service-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/02-springcloud-service-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/03-springcloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/login/pom.xml" />
+        <option value="$PROJECT_DIR$/superManage/pom.xml" />
+        <option value="$PROJECT_DIR$/warehouse/pom.xml" />
+        <option value="$PROJECT_DIR$/sale/pom.xml" />
+        <option value="$PROJECT_DIR$/staff/pom.xml" />
+        <option value="$PROJECT_DIR$/mapper-center/pom.xml" />
+        <option value="$PROJECT_DIR$/maintain/pom.xml" />
+        <option value="$PROJECT_DIR$/log/pom.xml" />
+        <option value="$PROJECT_DIR$/route/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

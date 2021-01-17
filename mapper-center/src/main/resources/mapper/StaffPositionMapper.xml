@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oym.mappercenter.mapper.StaffPositionMapper">
+    <select id="queryById" resultType="com.oym.mappercenter.entity.staff.StaffPosition">
+        SELECT 
+        *
+        FROM 
+        tb_staff_position
+        WHERE 
+        staff_position_id = #{staffPositionId}
+    </select>
+
+    <insert id="insert" parameterType="com.oym.mappercenter.entity.staff.StaffPosition">
+        INSERT INTO
+        tb_staff_position(staff_position_id,staff_position_name)
+        VALUES 
+        (#{staffPositionId},#{staffPositionName})
+    </insert>
+
+    <delete id="delete" parameterType="com.oym.mappercenter.entity.staff.StaffPosition">
+        DELETE FROM
+        tb_staff_position
+        WHERE 
+        staff_position_id = #{staffPositionId}
+    </delete>
+
+    <update id="update" parameterType="com.oym.mappercenter.entity.staff.StaffPosition">
+        UPDATE
+        tb_staff_position
+        SET 
+        staff_position_name = #{staffPositionName}
+        WHERE
+        staff_position_id = #{staffPositionId}
+    </update>
+
+    <select id="queryAll" resultType="com.oym.mappercenter.entity.staff.StaffPosition">
+        SELECT 
+        *
+        FROM 
+        tb_staff_position
+    </select>
+    
+</mapper>

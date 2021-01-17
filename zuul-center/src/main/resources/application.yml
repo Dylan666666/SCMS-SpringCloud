@@ -1,0 +1,34 @@
+# com.netflix.zuul.exception.zuulexception timeout 超时报错
+#host:
+#  connect-timeout-millis: 30000
+#  socket-timeout-millis: 60000
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 60000
+
+server:
+  port: 8010
+
+spring:
+  application:
+    name: zuul-center
+
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8083/eureka
+
+zuul:
+  sensitive-headers: Access-Control-Allow-Origin
+  ignored-headers: Access-Control-Allow-Origin,H-APP-Id,APPToken,staffToken
+  routes:
+    api-login:
+      path: /login/**
+      serviceId: LOGIN

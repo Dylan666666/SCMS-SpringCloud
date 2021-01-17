@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="superManage" />
+        <module name="login" />
+        <module name="mapper-center" />
+        <module name="02-springcloud-service-provider" />
+        <module name="03-springcloud-eureka-server" />
+        <module name="warehouse" />
+        <module name="maintain" />
+        <module name="route" />
+        <module name="sale" />
+        <module name="log" />
+        <module name="staff" />
+        <module name="01-springcloud-service-provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01-springcloud-service-provider" target="1.8" />
+      <module name="02-springcloud-service-provider" target="1.8" />
+      <module name="03-springcloud-eureka-server" target="1.8" />
+      <module name="log" target="1.8" />
+      <module name="login" target="1.8" />
+      <module name="maintain" target="1.8" />
+      <module name="mapper-center" target="1.8" />
+      <module name="route" target="1.8" />
+      <module name="sale" target="1.8" />
+      <module name="staff" target="1.8" />
+      <module name="superManage" target="1.8" />
+      <module name="warehouse" target="1.8" />
+      <module name="zuul-center" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="01-springcloud-service-provider" options="-parameters" />
+      <module name="02-springcloud-service-provider" options="-parameters" />
+      <module name="03-springcloud-eureka-server" options="-parameters" />
+      <module name="log" options="-parameters" />
+      <module name="login" options="-parameters" />
+      <module name="maintain" options="-parameters" />
+      <module name="mapper-center" options="-parameters" />
+      <module name="route" options="-parameters" />
+      <module name="sale" options="-parameters" />
+      <module name="staff" options="-parameters" />
+      <module name="superManage" options="-parameters" />
+      <module name="warehouse" options="-parameters" />
+      <module name="zuul-center" options="-parameters" />
+    </option>
+  </component>
+</project>

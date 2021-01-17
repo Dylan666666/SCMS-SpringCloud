@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oym.mappercenter.mapper.StocktakingMapper">
+    <insert id="insert" parameterType="com.oym.mappercenter.entity.Stocktaking">
+        INSERT INTO
+        tb_stocktaking(stocktaking_id,stocktaking_stock_goods_id,stock_num,
+        stocktaking_num,stocktaking_staff_id,stocktaking_status,stocktaking_remarks,
+        stocktaking_time,stocktaking_profit_loss_status,stocktaking_price)
+        VALUES 
+        (#{stocktakingId},#{stocktakingStockGoodsId},#{stockNum},#{stocktakingNum}
+        ,#{stocktakingStaffId},#{stocktakingStatus},#{stocktakingRemarks},#{stocktakingTime},
+        #{stocktakingProfitLossStatus},#{stocktakingPrice})
+    </insert>
+
+    <update id="update" parameterType="com.oym.mappercenter.entity.Stocktaking">
+        UPDATE
+        tb_stocktaking
+        <set>
+            <if test="stockNum != null"> stock_num = #{stockNum},</if>
+            <if test="stocktakingNum != null"> stocktaking_num = #{stocktakingNum},</if>
+            <if test="stocktakingStaffId"> stocktaking_staff_id = #{stocktakingStaffId},</if>
+            <if test="stocktakingStatus != null"> stocktaking_status = #{stocktakingStatus},</if>
+            <if test="stocktakingRemarks != null"> stocktaking_remarks = #{stocktakingRemarks},</if>
+            <if test="stocktakingProfitLossStatus != null"> stocktaking_profit_loss_status = #{stocktakingProfitLossStatus},</if>
+            <if test="stocktakingPrice != null"> stocktaking_price = #{stocktakingPrice}</if>
+        </set>
+        WHERE
+        stocktaking_id = #{stocktakingId}
+        AND
+        stocktaking_stock_goods_id = #{stocktakingStockGoodsId}
+    </update>
+
+    <select id="queryById" resultType="com.oym.mappercenter.entity.Stocktaking">
+        SELECT 
+        *
+        FROM 
+        tb_stocktaking
+        WHERE 
+        stocktaking_id = #{stocktakingId}
+        AND
+        stocktaking_stock_goods_id = #{stocktakingStockGoodsId}
+    </select>
+
+    <select id="queryAll" resultType="com.oym.mappercenter.entity.Stocktaking">
+        SELECT 
+        *
+        FROM 
+        tb_stocktaking
+        ORDER BY stocktaking_time DESC 
+        LIMIT #{rowIndex},#{pageSize}
+    </select>
+
+    <select id="queryByCondition" resultType="com.oym.mappercenter.entity.Stocktaking">
+        SELECT 
+        *
+        FROM
+        tb_stocktaking s
+        <where>
+            <if test="stocktakingCondition.stocktakingId != null">
+                AND
+                s.stocktaking_id
+                LIKE
+                '%${stocktakingCondition.stocktakingId}%'
+            </if>
+            <if test="stocktakingCondition.stocktakingStockGoodsId != null">
+                AND
+                s.stocktaking_stock_goods_id
+                LIKE
+                '%${stocktakingCondition.stocktakingStockGoodsId}%'
+            </if>
+            <if test="stocktakingCondition.stocktakingStatus != null">
+                AND
+                s.stocktaking_status = #{stocktakingCondition.stocktakingStatus}
+            </if>
+            <if test="stocktakingCondition.stocktakingProfitLossStatus != null">
+                AND
+                s.stocktaking_profit_loss_status = #{stocktakingCondition.stocktakingProfitLossStatus}
+            </if>
+        </where>
+        ORDER BY stocktaking_time DESC
+        LIMIT #{rowIndex},#{pageSize}
+    </select>
+
+    <select id="queryByStocktakingId" resultType="com.oym.mappercenter.entity.Stocktaking">
+        SELECT 
+        *
+        FROM 
+        tb_stocktaking
+        WHERE 
+        stocktaking_id = #{stocktakingId}
+    </select>
+
+</mapper>

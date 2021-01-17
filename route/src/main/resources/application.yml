@@ -1,0 +1,44 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8083/eureka/
+
+zuul:
+  routes:
+    salary.path: /login/**
+    salary.serviceId: LOGIN
+  log:
+    salary.path: /log/**
+    salary.serviceId: log
+  maintain:
+    salary.path: /maintain/**
+    salary.serviceId: maintain
+  sale:
+    salary.path: /sale/**
+    salary.serviceId: sale
+  staff:
+    salary.path: /staff/**
+    salary.serviceId: staff
+  superManage:
+    salary.path: /superManage/**
+    salary.serviceId: superManage
+  warehouse:
+    salary.path: /warehouse/**
+    salary.serviceId: warehouse
+ribbon:
+  ConnectTimeout: 5000 # 连接超时时间(ms)
+  ReadTimeout: 5000 # 通信超时时间(ms)
+hystrix:
+  command:
+    default:
+    execution:
+    isolation:
+    thread:
+    timeoutInMilliseconds: 60000 # 设置hystrix的超时时间为6000ms

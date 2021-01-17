@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="453d5c8c-22f4-48ec-be5e-acc6f517b8ce" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="test-02" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1n0J9RhCcuCfbNBGFT1hDMLYMEl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/warehouse/src/main/java/com/ljl/warehouse/mapper" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ljl.log.config.redis" />
+      <recent name="com.ljl.log.exceptions" />
+      <recent name="com.ljl.log.util" />
+      <recent name="com.ljl.log.enums" />
+      <recent name="com.ljl.log.entity.log" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\springboot\test-02\warehouse\src\main\java\com\ljl\warehouse\mapper" />
+      <recent name="H:\springboot\test-02\superManage\src\main\java\com\ljl\superManage\mapper" />
+      <recent name="H:\springboot\test-02\staff\src\main\java\com\ljl\staff\mapper" />
+      <recent name="H:\springboot\test-02\sale\src\main\java\com\ljl\sale\mapper" />
+      <recent name="H:\springboot\test-02\maintain\src\main\java\com\ljl\maintain\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RouteApplication">
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="02-springcloud-service-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ljl.test.springcloudserviceprovider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.test.springcloudserviceprovider.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="03-springcloud-eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.springcloudeurekaserver.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="login" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.springcloudservicelogin.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="01-springcloud-service-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.test.springcloudserviceprovider.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="log" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.log.LogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaintainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="maintain" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.maintain.MaintainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapperCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mapper-center" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oym.mappercenter.MapperCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RouteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="route" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.route.RouteApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sale" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.sale.SaleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaffApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="staff" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.staff.StaffApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="superManage" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.superManage.SuperApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WarehouseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="warehouse" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ljl.warehouse.WarehouseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuul-center" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oym.zuulcenter.ZuulCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="453d5c8c-22f4-48ec-be5e-acc6f517b8ce" name="Default Changelist" comment="" />
+      <created>1610520922052</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610520922052</updated>
+      <workItem from="1610520924967" duration="5979000" />
+      <workItem from="1610585751170" duration="10602000" />
+      <workItem from="1610603092637" duration="5423000" />
+      <workItem from="1610673542978" duration="17813000" />
+      <workItem from="1610715709393" duration="2865000" />
+      <workItem from="1610757627674" duration="21896000" />
+      <workItem from="1610791619742" duration="8541000" />
+      <workItem from="1610843748747" duration="24550000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="199" y="75" key="#Inspections" timestamp="1610527500330">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="199" y="75" key="#Inspections/0.0.1549.831@0.0.1549.831" timestamp="1610527500330" />
+    <state x="367" y="74" key="#Project_Structure" timestamp="1610780892957">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="367" y="74" key="#Project_Structure/0.0.1549.831@0.0.1549.831" timestamp="1610780892957" />
+    <state x="423" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1610784643241">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="423" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1549.831@0.0.1549.831" timestamp="1610784643241" />
+    <state x="482" y="274" width="584" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1610782377246">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="482" y="274" width="584" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1549.831@0.0.1549.831" timestamp="1610782377246" />
+    <state x="505" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610793403636">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="505" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1549.831@0.0.1549.831" timestamp="1610793403636" />
+    <state x="555" y="105" key="FileChooserDialogImpl" timestamp="1610851210468">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="555" y="105" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1610851210468" />
+    <state width="1506" height="262" key="GridCell.Tab.0.bottom" timestamp="1610871917089">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="262" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1610871917089" />
+    <state width="1506" height="262" key="GridCell.Tab.0.center" timestamp="1610871917089">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="262" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1610871917089" />
+    <state width="1506" height="262" key="GridCell.Tab.0.left" timestamp="1610871917089">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="262" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1610871917089" />
+    <state width="1506" height="262" key="GridCell.Tab.0.right" timestamp="1610871917089">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="262" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1610871917089" />
+    <state width="1506" height="262" key="GridCell.Tab.1.bottom" timestamp="1610871917089">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="262" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1610871917089" />
+    <state width="1506" height="262" key="GridCell.Tab.1.center" timestamp="1610871917089">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="262" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1610871917089" />
+    <state width="1506" height="262" key="GridCell.Tab.1.left" timestamp="1610871917089">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="262" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1610871917089" />
+    <state width="1506" height="262" key="GridCell.Tab.1.right" timestamp="1610871917089">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="262" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1610871917089" />
+    <state x="305" y="70" key="Maven.ArtifactSearchDialog" timestamp="1610844575924">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="305" y="70" key="Maven.ArtifactSearchDialog/0.0.1549.831@0.0.1549.831" timestamp="1610844575924" />
+    <state x="439" y="113" key="NewModule_or_Project.wizard" timestamp="1610851213523">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="439" y="113" key="NewModule_or_Project.wizard/0.0.1549.831@0.0.1549.831" timestamp="1610851213523" />
+    <state x="284" y="0" key="SettingsEditor" timestamp="1610865686287">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="284" y="0" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1610865686287" />
+    <state x="137" y="87" width="1190" height="565" key="new project wizard" timestamp="1610861608026">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="137" y="87" width="1190" height="565" key="new project wizard/0.0.1549.831@0.0.1549.831" timestamp="1610861608026" />
+    <state x="517" y="33" key="refactoring.ChangeSignatureDialog" timestamp="1610848227045">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="517" y="33" key="refactoring.ChangeSignatureDialog/0.0.1549.831@0.0.1549.831" timestamp="1610848227045" />
+  </component>
+</project>

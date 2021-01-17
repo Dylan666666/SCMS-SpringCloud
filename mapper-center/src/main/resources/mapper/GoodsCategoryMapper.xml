@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oym.mappercenter.mapper.GoodsCategoryMapper">
+    <select id="queryAll" resultType="com.oym.mappercenter.entity.GoodsCategory">
+        SELECT 
+        *
+        FROM 
+        tb_goods_category
+        ORDER BY category_id
+    </select>
+
+    <insert id="insert" parameterType="com.oym.mappercenter.entity.GoodsCategory">
+        INSERT INTO
+        tb_goods_category(category_id,category_name,stocktaking_staff_id)
+        VALUES 
+        (#{categoryId},#{categoryName},#{stocktakingStaffId})
+    </insert>
+
+    <select id="queryById" resultType="com.oym.mappercenter.entity.GoodsCategory">
+        SELECT 
+        *
+        FROM 
+        tb_goods_category
+        WHERE 
+        category_id = #{categoryId}
+    </select>
+
+    <select id="queryByStaffId" resultType="com.oym.mappercenter.entity.GoodsCategory">
+        SELECT 
+        *
+        FROM 
+        tb_goods_category
+        WHERE 
+        stocktaking_staff_id = #{stocktakingStaffId}
+    </select>
+
+    <update id="update" parameterType="com.oym.mappercenter.entity.GoodsCategory">
+        UPDATE
+        tb_goods_category
+        <set>
+            <if test="categoryName != null"> category_name = #{categoryName},</if>
+            <if test="stocktakingStaffId != null"> stocktaking_staff_id = #{stocktakingStaffId}</if>
+        </set>
+        WHERE
+        category_id = #{categoryId}
+    </update>
+
+    <update id="updateByStaffId" parameterType="int">
+        UPDATE
+        tb_goods_category
+        SET 
+        stocktaking_staff_id = NULL
+        WHERE
+        stocktaking_staff_id = #{stocktakingStaffId}
+    </update>
+
+</mapper>

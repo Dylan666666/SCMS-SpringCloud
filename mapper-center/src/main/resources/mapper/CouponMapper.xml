@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oym.mappercenter.mapper.CouponMapper">
+    <select id="queryByCouponId" resultType="com.oym.mappercenter.entity.Coupon">
+        SELECT 
+        *
+        FROM 
+        tb_coupon
+        WHERE 
+        coupon_id = #{couponId}
+    </select>
+    
+    <select id="queryByStaffId" resultType="com.oym.mappercenter.entity.Coupon">
+        SELECT 
+        *
+        FROM 
+        tb_coupon
+        WHERE 
+        coupon_staff_id = #{couponStaffId}
+    </select>
+    
+    <insert id="insert" parameterType="com.oym.mappercenter.entity.Coupon"
+    useGeneratedKeys="true" keyColumn="coupon_id" keyProperty="couponId">
+        INSERT INTO
+        tb_coupon(coupon_goods_id,coupon_unit_id,coupon_num,
+        coupon_time,coupon_status,coupon_staff_id)
+        VALUES 
+        (#{couponGoodsId},#{couponUnitId},#{couponNum},#{couponTime},
+        #{couponStatus},#{couponStaffId})
+    </insert>
+
+    <update id="update" parameterType="com.oym.mappercenter.entity.Coupon">
+        UPDATE
+        tb_coupon
+        <set>
+            <if test="couponStatus != null"> coupon_status = #{couponStatus}</if>
+        </set>
+        WHERE
+        coupon_id = #{couponId}
+    </update>
+
+    <select id="queryAll" resultType="com.oym.mappercenter.entity.Coupon">
+        SELECT 
+        *
+        FROM 
+        tb_coupon
+        ORDER BY coupon_time DESC 
+        LIMIT #{rowIndex},#{pageSize}
+    </select>
+
+    <select id="queryByCondition" resultType="com.oym.mappercenter.entity.Coupon">
+        SELECT 
+        *
+        FROM 
+        tb_coupon c
+        <where>
+            <if test="couponCondition.couponId != null">
+                AND
+                c.coupon_id
+                LIKE
+                '%${couponCondition.couponId}%'
+            </if>
+            <if test="couponCondition.couponGoodsId != null">
+                AND
+                c.coupon_goods_id
+                LIKE
+                '%${couponCondition.couponGoodsId}%'
+            </if>
+            <if test="couponCondition.couponStatus != null">
+                AND
+                c.coupon_status = #{couponCondition.couponStatus}
+            </if>
+            <if test="couponCondition.couponStaffId != null">
+                AND
+                c.coupon_staff_id = #{couponCondition.couponStaffId}
+            </if>
+        </where>
+        ORDER BY coupon_time DESC 
+        LIMIT #{rowIndex},#{pageSize}
+    </select>
+
+</mapper>
